@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="email-input">
-        <h2>Enter your email</h2>
-    <input type="text">
-    </div>
-    <div class="output">
-        <h2>This is your code you have to paste</h2>
-        <p>check? aksdjgkahsg</p>
-        <button>Copy</button>
-    </div>
+    <div class="container">
+        <h1>Encrypted Password Generator</h1>
+        <form id="password-form">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="button" id="generate-btn">Generate Password</button>
+            </div>
+            <div class="form-group">
+                <input type="text" id="encrypted-password" readonly>
+                <button type="button" id="copy-btn" class="copy-btn">Copy</button>
+            </div>
+        </form>
     </div>
 
 </body>
